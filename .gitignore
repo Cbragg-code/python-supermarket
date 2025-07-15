@@ -21,3 +21,8 @@ build/
 
 # PyInstaller
 *.spec
+
+# PyInstaller output
+build/
+dist/
+*.spec
