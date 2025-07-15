@@ -8,27 +8,27 @@ class SupermarketGUI:
         self.root = root
         self.root.title("Supermarket Simulator (Animated)")
 
-        self.title_label = tk.Label(root, text="Supermarket Simulator", 
+        self.title_label = tk.Label(root, text="Supermarket Simulator",
                                     font=("Arial", 20))
         self.title_label.pack(pady=10)
 
         control_frame = tk.Frame(root)
         control_frame.pack(pady=10)
 
-        tk.Label(control_frame, 
+        tk.Label(control_frame,
                  text="Number of Registers:").grid(row=0, column=0)
         self.registers_entry = tk.Entry(control_frame)
         self.registers_entry.insert(0, "3")
         self.registers_entry.grid(row=0, column=1)
 
-        tk.Label(control_frame, 
+        tk.Label(control_frame,
                  text="Number of Customers:").grid(row=1, column=0)
         self.customers_entry = tk.Entry(control_frame)
         self.customers_entry.insert(0, "15")
         self.customers_entry.grid(row=1, column=1)
 
-        self.start_button = tk.Button(control_frame, 
-                                      text="Start Simulation", 
+        self.start_button = tk.Button(control_frame,
+                                      text="Start Simulation",
                                       command=self.run_simulation)
         self.start_button.grid(row=2, column=0, columnspan=2, pady=10)
 
